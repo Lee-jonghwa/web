@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      height: 500px;
+      border: 1px solid black;
+      /* 배치가 block인 div에서 inline인 flex로 */
+      display: flex;
+      /* 메인 축을 행으로 */
+      /* flex-direction: row; */
+      /* 메인 축을 열로 */
+      /* flex-direction: column; */
+      /* 메인 축을 행 반대방향으로 */
+      /* flex-direction: row-reverse; */
+      /* 메인 축을 열 반대방향으로 */
+      /* flex-direction: column-reverse; */
+
+      /* 너비를 줄이고 창에 맞게 조절 */
+      /* flex-wrap: nowrap; */
+      /* 너비에 따라 줄이지 않고 다른 행으로 떨어뜨림 */
+      flex-wrap: wrap;
+
+
+      /* 주축(main)을 기준으로 정렬 */
+      /* 기본값 */
+      /* justify-content: flex-start; */
+      /* 가운데 정렬 */
+      justify-content: center;
+      /* 오른쪽 정렬 */
+      /* justify-content: flex-end; */
+
+      /* 교차축(cross) 정렬 */
+      /* 기본값 */
+      /* align-content: flex-start; */
+      /* 가운데 정렬 */
+      /* align-content: center; */
+      /* 아래 정렬 */
+      /* align-content: flex-end; */
+
+      /* align-items: flex-start; */
+      /* 가운데 정렬 */
+      /* align-items: center; */
+      /* align-items: flex-end; */
+    }
+
+    .post {
+      background-color: grey;
+      border: 1px solid black;
+      margin: 0.5rem;
+      padding: 0.5rem;
+    }
+
+    .item1 {
+      /* 개별 요소에 부여 */
+      align-self: center;
+    }
+
+    .item2 {
+      align-self: flex-end;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="post item1">
+      <h2>Post Title 1</h2>
+      <p>Post Content 1</p>
+    </div>
+    <div class="post item2">
+      <h2>Post Title 2</h2>
+      <p>Post Content 2</p>
+    </div>
+    <div class="post item3">
+      <h2>Post Title 3</h2>
+      <p>Post Content 3</p>
+    </div>
+    <div class="post item4">
+      <h2>Post Title 4</h2>
+      <p>Post Content 4</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
